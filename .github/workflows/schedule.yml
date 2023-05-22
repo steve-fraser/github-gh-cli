@@ -34,7 +34,9 @@ jobs:
 
   update:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      packages: write
     name: Update GITHUB_CLI_VERSION
 
     needs: get_version
